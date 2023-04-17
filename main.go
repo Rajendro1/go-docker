@@ -1,15 +1,15 @@
 package main
 
-import(
+import (
 	"fmt"
-	"net/http"
 	"log"
+	"net/http"
 )
 
-func main(){
+func main() {
 	fmt.Println("Go Docker Tutorial")
 
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request){
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(w, "Hello World")
 	})
 
