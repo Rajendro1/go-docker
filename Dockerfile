@@ -1,8 +1,7 @@
 FROM golang:latest
-RUN mkdir /app
-ADD . /app
 WORKDIR /app
-RUN go build
+COPY . .
+RUN go build -o app
 EXPOSE 8081
 CMD [ "./app" ]
 
